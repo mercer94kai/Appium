@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="77546" started-at="2021-01-18T23:26:49 IST" finished-at="2021-01-18T23:28:07 IST">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="77546" started-at="2021-01-18T23:26:49 IST" finished-at="2021-01-18T23:28:07 IST">
+      <class name="App.cricbuzzApp">
+        <test-method status="PASS" signature="bt()[pri:0, instance:App.cricbuzzApp@4493d195]" name="bt" is-config="true" duration-ms="21165" started-at="2021-01-18T23:26:49 IST" finished-at="2021-01-18T23:27:10 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bt -->
+        <test-method status="PASS" signature="testcase1()[pri:0, instance:App.cricbuzzApp@4493d195]" name="testcase1" duration-ms="56289" started-at="2021-01-18T23:27:11 IST" finished-at="2021-01-18T23:28:07 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase1 -->
+      </class> <!-- App.cricbuzzApp -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
