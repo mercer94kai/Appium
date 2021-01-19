@@ -29,18 +29,21 @@ AndroidDriver<AndroidElement> driver;
 	@Test
 	public void testcase1() throws MalformedURLException, InterruptedException 
 	{
-		
+		//****Opening cricbuzz.com in Google 
 		driver.get("https://www.cricbuzz.com/");
-		//driver.findElement(By.xpath("//*[@name='q']")).sendKeys(Keys.RETURN);
 		Thread.sleep(3000);
+		//****Clicking on Menu option
 		driver.findElement(By.xpath("//*[@id=\"top\"]/div/div[3]/div[2]/a")).click();
 		Thread.sleep(3000);
+		//****Clicking on Home option
 		driver.findElement(By.xpath("//*[@id=\"top\"]/div/div[12]/table/tbody/tr[1]/td[1]/a")).click();
 		
+		//****Initializing JS object and scrolling to <Top Stories> element 
 		JavascriptExecutor js =(JavascriptExecutor)driver;
 		WebElement elm=driver.findElement(By.xpath("//*[contains(text(),'Top Stories')]"));
 		js.executeScript("arguments[0].scrollIntoView()",elm);
 		
+		//****Using assertion to verify the element
 		Assert.assertTrue(elm.getText().equals("Top Stories"));
 	}
 
